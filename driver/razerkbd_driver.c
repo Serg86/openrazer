@@ -57,6 +57,7 @@ MODULE_LICENSE(DRIVER_LICENSE);
 #define RAZER_GAME_KEY KEY_MACRO29 // TODO maybe KEY_GAMES?
 #define RAZER_BRIGHTNESS_DOWN KEY_MACRO28
 #define RAZER_BRIGHTNESS_UP KEY_MACRO27
+#define RAZER_EFFECT_KEY KEY_MACRO26
 
 /**
  * List of keys to swap
@@ -92,7 +93,7 @@ static const struct razer_key_translation chroma_keys_2[] = {
     { KEY_F7,    KEY_PREVIOUSSONG },
     { KEY_F8,    KEY_NEXTSONG },
     { KEY_F11,   RAZER_GAME_KEY },
-//     { KEY_F12,   RAZER_EFFECT_KEY }, // enable if daemon supports, see #577
+    { KEY_F12,   RAZER_EFFECT_KEY }, // enable if daemon supports, see #577
     { KEY_RIGHTALT,    RAZER_MACRO_KEY },
 
     { KEY_PAUSE, KEY_SLEEP },
